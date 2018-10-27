@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #17BEBB;
+    font-family: 'Mukta', sans-serif;
+}
+
+.pi_Card {
+    background-color: #ffffff;
+    max-width: 60em;
+    position: relative;
+}
+
+.pi_Card::before {
+    content: " ";
+    position: absolute;
+    left: 4%;
+    top: -4%;
+    background-image: url(../img/perfil.jpg);
+    background-size: cover;
+    width: 18em;
+    height: 24em;
+    display: inline-block;
+}
+
+.pi_Card-information {
+    padding: 1.3em 1.3em 1.3em 22em;
+    display: inline-block;
+    vertical-align: top;
+    color: #525760;
+}
+
+.pi_Card-information-name {
+    font-weight: bold;
+    font-size: 1.7em;
+}
+
+.pi_Card-information-ocupation {
+    font-weight: bold;
+    font-size: 1.1em;
+    margin-bottom: 0.5em;
+}
+
+.pi_Card-information-ocupation-place {
+    color: #14d0a6;
+}
+
+.pi_Card-information-description {
+    margin-bottom: 2em;
+}
+
+.pi_Card-information-network-location{
+    float: left;
+    line-height: 3;
+}
+
+.pi_Card-information-network-location .icon {
+    vertical-align: text-top;
+}
+
+.pi_Card-information-network-contact {
+    list-style: none;
+    float: right;
+    padding: 0;
+}
+
+.pi_Card-information-network-contact-item {
+    display: inline-block;
+}
+
+.pi_Card-information-network-contact-item .icon{
+    color: gray;
+    opacity: 0.5;
+}
