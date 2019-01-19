@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ProjectsList should render projectList component 1`] = `
+<div
+  className="pi_Card-projectsList"
+>
+  <span
+    className="pi_Card-projectsList-title"
+  >
+    Personal projects
+  </span>
+  <ul>
+    <Project
+      description="Guitar landingpage (HTML, SASS, JADE, JS)"
+      link="https://inviesible.netlify.com/"
+      name="Inviesible"
+    />
+    <Project
+      description="Set of buttons of different color, type and size (HTML, SASS)"
+      link="https://kit-buttons.netlify.com/"
+      name="kit buttons"
+    />
+  </ul>
+</div>
+`;

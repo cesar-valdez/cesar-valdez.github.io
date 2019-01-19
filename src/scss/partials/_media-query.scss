@@ -18,19 +18,30 @@
 		&-network {
 			display: flex;
 			justify-content: space-between;
-			align-items: center;
+
+			&-location {
+				align-self: center;
+			}
+
+			&-contact {
+				height: 3em;
+			}
 		}
 	}
 }
 
 @media screen and (min-width: $min-width-sm)
 {
+	body {
+		padding: 2em 0.6em;
+	}
+
 	.pi_Card {
 		max-width: 50em;
 		position: relative;
 
 		&::before {
-			max-width: 19em !important;
+			max-width: 20em !important;
 			background-image: url(../img/perfil2.jpg) !important;
 			position: absolute;
 			top: 0;
@@ -47,12 +58,12 @@
 @media screen and (min-width: $min-width-md)
 {
 	.pi_Card {
-		max-width: 55em;
+		max-width: 65em;
 
 		&::before {
 			top: -1.2em;
-			left: 2em;
-			height: 24em !important;
+			left: 1.5em;
+			height: 29em !important;
 		}
 
 		&-information{

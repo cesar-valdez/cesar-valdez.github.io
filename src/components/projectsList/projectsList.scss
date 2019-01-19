@@ -1,0 +1,16 @@
+@import '../../scss/variables/colors';
+
+.pi_Card {
+	&-projectsList {
+		margin-bottom: 1em;
+
+		&-title {
+			font-weight: bold;
+		}
+
+		ul {
+			height: 5em;
+			overflow: scroll;
+		}
+	}
+}

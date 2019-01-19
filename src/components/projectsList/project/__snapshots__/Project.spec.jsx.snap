@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Project should render Project component 1`] = `
+<li
+  className="pi_Card-projectsList-li"
+>
+  <a
+    target="_blank"
+  >
+    <span
+      className="pi_Card-projectsList-li-project"
+    >
+       
+    </span>
+    <span>
+       - 
+    </span>
+    <span
+      className="pi_Card-projectsList-li-description"
+    />
+  </a>
+</li>
+`;

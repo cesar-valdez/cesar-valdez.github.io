@@ -5,10 +5,11 @@ import 'evil-icons/assets/evil-icons.js';
 
 import './scss/app';
 
-import NetworkSocial from './components/networkSocial';
 import Information from './components/information';
+import ProjectsList from './components/projectsList';
+import NetworkSocial from './components/networkSocial';
 
-const App = () => <React.Fragment><Information/><NetworkSocial/></React.Fragment>;
+const App = () => <React.Fragment><Information/><ProjectsList/><NetworkSocial/></React.Fragment>;
 
 ReactDOM.render(<App />, document.getElementById('root'));
 
