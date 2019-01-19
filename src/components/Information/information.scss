@@ -1,11 +1,11 @@
-@import '../variables/colors';
+@import '../../scss/variables/colors';
 
 .pi_Card {
 	border-radius: 4px;
 
 	&::before {
 		content: " ";
-		background-image: url(../img/perfil.jpg);
+		background-image: url(../../img/perfil.jpg);
 		background-size: cover;
 		background-position: top;
 		max-width: 100%;
@@ -20,6 +20,17 @@
 
 		&-name {
 			font-size: 1.7em;
+			display: inline-block;
+		}
+
+		&-dot {
+			width: 4px;
+			height: 4px;
+			background: $blue;
+			display: inline-block;
+			border-radius: 50%;
+			margin-left: 0.2em;
+			vertical-align: unset;
 		}
 
 		&-ocupation {

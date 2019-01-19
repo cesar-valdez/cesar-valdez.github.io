@@ -4,7 +4,7 @@
 @media screen and (min-width: $min-width-xs)
 {
 	body {
-		background-color: $green-light;
+		background-color: $blue;
 		display: flex;
 		justify-content: center;
 		align-items: center;
@@ -30,16 +30,16 @@
 		position: relative;
 
 		&::before {
-			max-width: 19em;
-			background-image: url(../img/perfil2.jpg);
+			max-width: 19em !important;
+			background-image: url(../img/perfil2.jpg) !important;
 			position: absolute;
 			top: 0;
 			bottom: 0;
-			height: 100%;
+			height: 100% !important;
 		}
 
 		&-information {
-			padding: 1em 2em 1em 21em;
+			padding: 1em 2em 1em 21em !important;
 		}
 	}
 }
@@ -52,11 +52,11 @@
 		&::before {
 			top: -1.2em;
 			left: 2em;
-			height: 24em;
+			height: 24em !important;
 		}
 
 		&-information{
-			padding: 1em 2em 1em 23em;
+			padding: 1em 2em 1em 23em !important;
 		}
 	}
 }
