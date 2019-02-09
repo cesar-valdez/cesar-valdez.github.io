@@ -1,0 +1,362 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v4.0 | 20180602
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+main, menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, main, menu, nav, section {
+	display: block;
+}
+/* HTML5 hidden-attribute fix for newer browsers */
+*[hidden] {
+    display: none;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+@-webkit-keyframes spin {
+  100% {
+    -webkit-transform:rotate(360deg);
+            transform:rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  100% {
+    -webkit-transform:rotate(360deg);
+            transform:rotate(360deg);
+  }
+}
+
+
+.icon {
+  position: relative;
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  overflow: hidden;
+  fill: currentColor;
+}
+
+.icon__cnt {
+  width: 100%;
+  height: 100%;
+  background: inherit;
+  fill: inherit;
+  pointer-events: none; /* Do not catch pointer events */
+  transform: translateX(0); /* Crisp fix for non-retina */
+  -ms-transform: translate(0.5px, -0.3px); /* Crisp fix for IE */
+}
+
+.icon--m {
+  width: 50px;
+  height: 50px;
+}
+
+.icon--l {
+  width: 100px;
+  height: 100px;
+}
+
+.icon--xl {
+  width: 150px;
+  height: 150px;
+}
+
+.icon--xxl {
+  width: 200px;
+  height: 200px;
+}
+
+.icon__spinner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.icon--ei-spinner .icon__spinner,
+.icon--ei-spinner-2 .icon__spinner {
+  -webkit-animation: spin 1s steps(12) infinite;
+          animation: spin 1s steps(12) infinite;
+}
+
+.icon--ei-spinner-3 .icon__spinner {
+  -webkit-animation: spin 1.5s linear infinite;
+          animation: spin 1.5s linear infinite;
+}
+
+.icon--ei-sc-facebook {
+  fill: #3b5998;
+}
+
+.icon--ei-sc-github {
+  fill: #333;
+}
+
+.icon--ei-sc-google-plus {
+  fill: #dd4b39;
+}
+
+.icon--ei-sc-instagram {
+  fill: #3f729b;
+}
+
+.icon--ei-sc-linkedin {
+  fill: #0976b4;
+}
+
+.icon--ei-sc-odnoklassniki {
+  fill: #ed812b;
+}
+
+.icon--ei-sc-skype {
+  fill: #00aff0;
+}
+
+.icon--ei-sc-soundcloud {
+  fill: #f80;
+}
+
+.icon--ei-sc-tumblr {
+  fill: #35465c;
+}
+
+.icon--ei-sc-twitter {
+  fill: #55acee;
+}
+
+.icon--ei-sc-vimeo {
+  fill: #1ab7ea;
+}
+
+.icon--ei-sc-vk {
+  fill: #45668e;
+}
+
+.icon--ei-sc-youtube {
+  fill: #e52d27;
+}
+
+.icon--ei-sc-pinterest {
+  fill: #bd081c;
+}
+
+.icon--ei-sc-telegram {
+  fill: #0088cc;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Mukta", sans-serif;
+  line-height: initial;
+}
+
+body, html {
+  height: 100%;
+}
+
+/**
+xs - > 576 px --- min-width:576px, max-width: 767
+sm - > 768 px --- min-width: 678px, max-width: 991px
+md - > 992 px --- min-width: 992px, max-width: 1999px
+lg - > 1200 px -- min-width: 1200px
+*/
+@media screen and (min-width: 36em) {
+  body {
+    background-color: #24A0BF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2em 3em;
+  }
+
+  .pi_Card {
+    background-color: #ffffff;
+    max-width: 37em;
+  }
+  .pi_Card-network {
+    display: flex;
+    justify-content: space-between;
+  }
+  .pi_Card-network-location {
+    align-self: center;
+  }
+  .pi_Card-network-contact {
+    height: 3em;
+  }
+}
+@media screen and (min-width: 48em) {
+  body {
+    padding: 2em 0.6em;
+  }
+
+  .pi_Card {
+    max-width: 50em;
+    position: relative;
+  }
+  .pi_Card::before {
+    max-width: 20em !important;
+    background-image: url(perfil2.76d28178.jpg) !important;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    height: 100% !important;
+  }
+  .pi_Card-information {
+    padding: 1em 2em 1em 21em !important;
+  }
+}
+@media screen and (min-width: 62em) {
+  .pi_Card {
+    max-width: 65em;
+  }
+  .pi_Card::before {
+    top: -1.2em;
+    left: 1.5em;
+    height: 29em !important;
+  }
+  .pi_Card-information {
+    padding: 1em 2em 1em 23em !important;
+  }
+}.pi_Card {
+  border-radius: 4px;
+}
+.pi_Card::before {
+  content: " ";
+  background-image: url(perfil.b4ee7ff0.jpg);
+  background-size: cover;
+  background-position: top;
+  max-width: 100%;
+  width: 100%;
+  height: 18em;
+  display: inline-block;
+}
+.pi_Card-information {
+  padding: 1em 1.5em;
+  color: #525760;
+}
+.pi_Card-information-name {
+  font-size: 1.7em;
+  display: inline-block;
+  font-weight: bold;
+}
+.pi_Card-information-dot {
+  width: 4px;
+  height: 4px;
+  background: #24A0BF;
+  display: inline-block;
+  border-radius: 50%;
+  margin-left: 0.2em;
+  vertical-align: unset;
+}
+.pi_Card-information-ocupation {
+  font-size: 1em;
+  margin-bottom: 0.5em;
+  font-weight: bold;
+}
+.pi_Card-information-ocupation-place {
+  color: #14d0a6;
+}
+.pi_Card-information-description {
+  margin-bottom: 1em;
+}.pi_Card-projectsList {
+  margin-bottom: 1em;
+}
+.pi_Card-projectsList-title {
+  font-weight: bold;
+}
+.pi_Card-projectsList ul {
+  height: 5em;
+  overflow: scroll;
+}.pi_Card-projectsList-li {
+  cursor: pointer;
+}
+.pi_Card-projectsList-li:hover {
+  background-color: #f7f7f7;
+}
+.pi_Card-projectsList-li:hover .pi_Card-projectsList-li-project::before {
+  transform: scale(1.3);
+}
+.pi_Card-projectsList-li-project {
+  position: relative;
+  padding-left: 0.7em;
+  color: #24A0BF;
+}
+.pi_Card-projectsList-li-project::before {
+  content: "";
+  transition: 0.3s;
+  position: absolute;
+  width: 3px;
+  height: 3px;
+  background: #24A0BF;
+  border-radius: 50%;
+  left: 2%;
+  top: 42%;
+}
+.pi_Card-projectsList-li-description {
+  font-size: 0.8em;
+  color: #808080;
+}
+.pi_Card-projectsList-li a {
+  text-decoration: none;
+  display: block;
+}.pi_Card-network-location .icon {
+  vertical-align: text-top;
+}
+.pi_Card-network-contact {
+  list-style: none;
+  padding: 0;
+}
+.pi_Card-network-contact-item {
+  display: inline-block;
+}
+.pi_Card-network-contact-item .icon {
+  color: #808080;
+  opacity: 0.5;
+  transition: opacity 0.3s ease;
+}
+.pi_Card-network-contact-item .icon:hover {
+  opacity: 1;
+}
